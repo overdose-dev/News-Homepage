@@ -14,16 +14,23 @@
   box-sizing: border-box;
 }
 
-#nav-section {
+#nav-section,
+#body-section,
+#bottom-section {
   margin: 0;
-  padding: 70px 120px 10px;
   font-size: 15px;
 }
 
+#nav-section {
+  padding: 70px 120px 10px;
+}
+
 #body-section {
-  margin: 0;
   padding: 10px 120px 10px;
-  font-size: 15px;
+}
+
+#bottom-section {
+  padding: 40px 120px 10px;
 }
 
 nav {
@@ -120,6 +127,7 @@ button {
   letter-spacing: 5px;
   font-weight: 700;
   font-size: 10px;
+  cursor: pointer;
 }
 
 #new {
@@ -150,6 +158,28 @@ button {
 
 hr {
   margin: 35px 0;
+}
+
+.numb {
+  margin: 0;
+  box-sizing: border-box;
+  color: hsl(235, 20%, 78%);
+  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+  top: 0;
+  left: -270px;
+  float: right;
+  background: none;
+}
+
+.head {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  left: -270px;
+  float: right;
+  background: none;
 }
 
 @media (max-width: 375px) {
