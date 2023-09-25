@@ -1,7 +1,11 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin: 20px 0 10px;
+  font-style: italic;
+  letter-spacing: 1px;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
@@ -30,7 +34,7 @@
 }
 
 #bottom-section {
-  padding: 40px 120px 10px;
+  padding: 60px 120px 10px;
 }
 
 nav {
@@ -130,6 +134,10 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+
 #new {
   background: none;
   font-size: 30px;
@@ -146,6 +154,11 @@ button {
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 10px;
+}
+
+.text-title:hover {
+  cursor: pointer;
+  color: hsl(35, 77%, 62%);
 }
 
 .text-body {
@@ -165,21 +178,58 @@ hr {
   box-sizing: border-box;
   color: hsl(235, 20%, 78%);
   font-weight: bold;
-  font-size: 30px;
+  font-size: 34px;
   position: relative;
   top: 0;
-  left: -270px;
-  float: right;
-  background: none;
 }
 
 .head {
   box-sizing: border-box;
   margin: 0;
   position: relative;
-  left: -270px;
-  float: right;
-  background: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: hsl(240, 100%, 5%);
+}
+
+.head:hover {
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+
+.bottom-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.item-1,
+.item-2,
+.item-3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.item-1 img,
+.item-2 img,
+.item-3 img {
+  width: 30%;
+}
+
+.item-texts {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 40px;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.item-texts-description {
+  text-align: justify;
+  line-height: 1.6;
+  font-weight: 500;
+  color: hsl(236, 13%, 42%);
 }
 
 @media (max-width: 375px) {
