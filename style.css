@@ -26,7 +26,7 @@
 }
 
 #nav-section {
-  padding: 70px 120px 10px;
+  padding: 50px 120px 10px;
 }
 
 #body-section {
@@ -46,6 +46,9 @@ nav {
 .myNav {
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .myNav ul {
@@ -324,5 +327,34 @@ hr {
 
   .grid-item-4 {
     margin-top: 2.5em;
+  }
+
+  .bottom-container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+
+  #bottom-section {
+    padding: 40px 10px;
+  }
+
+  .item-1,
+  .item-2 {
+    margin-bottom: 25px;
+  }
+
+  .item-texts {
+    margin-left: 15px;
+    margin-right: 10px;
+    text-align: left;
+  }
+
+  .item-texts-description {
+    text-align: left;
+  }
+
+  .numb {
+    font-size: 30px;
   }
 }
