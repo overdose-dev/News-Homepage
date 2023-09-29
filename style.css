@@ -4,6 +4,7 @@
   margin: 20px 0 10px;
   font-style: italic;
   letter-spacing: 1px;
+  margin: 0 15px;
 }
 
 .attribution a {
@@ -250,7 +251,167 @@ hr {
   color: hsl(236, 13%, 42%);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1024px) {
+  #body-section {
+    padding: 10px 80px 10px;
+  }
+
+  #nav-section {
+    padding: 50px 80px 10px;
+  }
+
+  #bottom-section {
+    padding: 60px 80px 10px;
+  }
+
+  .web3text {
+    font-size: 40px;
+  }
+
+  .grid-item-3 {
+    margin-right: 0;
+  }
+
+  .grid-item-4 {
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 768px) {
+  .dropdown {
+    display: block;
+  }
+
+  section {
+    padding: 50px 20px;
+  }
+
+  #body-section {
+    padding: 0 40px;
+  }
+
+  #nav-section {
+    padding: 10px 40px;
+  }
+
+  .dropdown {
+    margin-right: 0;
+  }
+
+  .mobileImg {
+    display: block;
+  }
+
+  .desktopImg {
+    display: none;
+  }
+
+  .grid-container {
+    grid-gap: 35px;
+  }
+
+  .myNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .myNav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 33%;
+    text-align: left;
+    padding-top: 140px;
+    display: none; /* remove to remove display none */
+  }
+
+  .myNav ul li {
+    display: block;
+    line-height: 50px;
+  }
+
+  .myNav ul li a {
+    font-size: 15px;
+    color: hsl(0, 0%, 2%);
+    font-weight: bold;
+  }
+
+  .myNav ul li a:hover {
+    color: hsl(5, 85%, 63%);
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .web3text {
+    margin-right: 0;
+    font-size: 45px;
+  }
+
+  .grid-item-3 {
+    font-size: 18px;
+  }
+
+  .grid-item-3 button {
+    padding: 15px 35px;
+    font-size: 14px;
+  }
+
+  .grid-item-4 {
+    margin-top: 1.5em;
+  }
+
+  .text-title {
+    font-size: 24px;
+  }
+
+  .text-body {
+    font-size: 16px;
+  }
+
+  .bottom-container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+
+  #bottom-section {
+    padding: 40px 44px;
+  }
+
+  .item-1,
+  .item-2 {
+    margin-bottom: 25px;
+  }
+
+  .item-texts {
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: 20px;
+    padding: 12px 0;
+  }
+
+  .item-texts-description {
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .numb {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 640px) {
+}
+
+@media (max-width: 430px) {
   .dropdown {
     display: block;
   }
