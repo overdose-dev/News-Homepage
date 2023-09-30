@@ -314,19 +314,23 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+    margin-top: 30px;
     padding-bottom: 0;
   }
 
   .myNav ul {
-    position: fixed;
-    width: 100%;
+    position: absolute;
+    width: 300px;
     height: 100vh;
     top: 0;
-    left: 33%;
+    right: 0;
     text-align: left;
     padding-top: 140px;
-    display: none; /* remove to remove display none */
+    background-color: white;
+    z-index: 2;
+    display: none;
+    transition: 1s;
   }
 
   .myNav ul li {
@@ -342,6 +346,13 @@ hr {
 
   .myNav ul li a:hover {
     color: hsl(5, 85%, 63%);
+  }
+
+  .menuClose {
+    display: block;
+    z-index: 99;
+    margin-right: 35px;
+    margin-top: -120px;
   }
 
   .grid-container {
@@ -445,23 +456,28 @@ hr {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0;
+    margin-top: 20px;
     padding-bottom: 0;
   }
 
   .myNav ul {
-    position: fixed;
-    width: 100%;
+    position: absolute;
+    width: 200px;
     height: 100vh;
     top: 0;
-    left: 33%;
+    right: 0;
     text-align: left;
     padding-top: 140px;
-    display: none; /* remove to remove display none */
+    background-color: white;
+    z-index: 2;
+    display: none;
+    transition: 1s;
   }
 
   .myNav ul li {
     display: block;
     line-height: 50px;
+    margin-left: 30px;
   }
 
   .myNav ul li a {
@@ -472,6 +488,13 @@ hr {
 
   .myNav ul li a:hover {
     color: hsl(5, 85%, 63%);
+  }
+
+  .menuClose {
+    display: block;
+    z-index: 99;
+    margin-right: 35px;
+    margin-top: -120px;
   }
 
   .grid-container {
